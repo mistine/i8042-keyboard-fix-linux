@@ -6,6 +6,8 @@ If your laptop's keyboard and/or trackpad doesn't work after resuming from suspe
 
 This used to work flawlessly on old Linux kernels, however in recent kernels it's broken. Broken for years now.
 
+Other fixes would involve using `i8042.direct` and `i8042.dumbkbd`, which messes up the keyboard light (CapsLock, NumsLock etc) and is unacceptable for me. `i8042.reset` alone doesn't work.
+
 ## Usage
 Assuming you have this bug, first you need to check whether you're applicable for this fix.
 I'll look into fixing this with non-i8042 platforms soon.
