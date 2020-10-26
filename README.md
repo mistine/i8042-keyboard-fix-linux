@@ -4,7 +4,7 @@ A (pseudo) fix for i8042 controller driver that breaks keyboard/trackpad functio
 ## Why would someone need this?
 If your laptop's keyboard and/or trackpad doesn't work after resuming from suspend, maybe you'll need this.
 
-This used to work flawlessly on old Linux kernels, however in recent kernels it's broken. Broken for years now.
+You never had to fix this in older Linux kernels. However, in recent kernels it's broken. Broken for years now.
 
 Other fixes would involve using `i8042.direct` and `i8042.dumbkbd`, which messes up the keyboard light (CapsLock, NumsLock etc) and is unacceptable for me. `i8042.reset` alone doesn't work.
 
